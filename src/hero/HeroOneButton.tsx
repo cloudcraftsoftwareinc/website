@@ -2,8 +2,9 @@ import type { ReactNode } from 'react';
 
 type IHeroOneButtonProps = {
   title: ReactNode;
-  description: string;
-  button: ReactNode;
+  description?: string;
+  button?: ReactNode;
+  image?: string;
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
@@ -12,8 +13,8 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       {props.title}
     </h1>
     <div className="mb-16 mt-4 text-2xl">{props.description}</div>
-
     {props.button}
+    {/* <img src={props.image}></img> */}
   </header>
 );
 
