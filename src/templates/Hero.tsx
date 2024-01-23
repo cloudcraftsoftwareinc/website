@@ -28,12 +28,11 @@ const Hero = () => (
           <>
             {'Tailored Solutions in \n'}
             <span className="text-primary-500">
-              Cloud Technology, AI Integration, and Organizational
-              Transformation
+              Automation, AI Integration, and Organizational Transformation
             </span>
           </>
         }
-        description="Leverage the power of AI, Automation, and the Cloud to transform your business."
+        description="Leverage the power of Low-code, AI, Automation, and the Cloud to transform your business."
         button={
           <Link target="_blank" href="https://m.me/201238836414988">
             <Button xl>Contact Us</Button>
