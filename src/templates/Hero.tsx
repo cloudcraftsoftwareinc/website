@@ -32,7 +32,7 @@ const Hero = () => (
             </span>
           </>
         }
-        description="Leverage the power of Low-code, AI, Automation, and the Cloud to transform your business."
+        description="Leveraging the power of Low-code, AI, Automation, and the Cloud to transform your business."
         button={
           <Link target="_blank" href="https://m.me/201238836414988">
             <Button xl>Contact Us</Button>
