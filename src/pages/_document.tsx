@@ -1,4 +1,4 @@
-import { GoogleTagManager } from '@next/third-parties/google';
+import GoogleTagManager from '@magicul/next-google-tag-manager';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import { AppConfig } from '../utils/AppConfig';
@@ -10,11 +10,11 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
-        <body>
+        <body className="testing">
           <Main />
           <NextScript />
         </body>
-        <GoogleTagManager gtmId="G-NV5LK0T9C1" />
+        <GoogleTagManager id="G-NV5LK0T9C1" />
       </Html>
     );
   }

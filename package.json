@@ -14,6 +14,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@magicul/next-google-tag-manager": "^2.0.0",
     "@next/third-parties": "^14.1.0",
     "classnames": "^2.5.1",
     "next": "^14.0.4",
