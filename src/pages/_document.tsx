@@ -9,13 +9,12 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head>
-          <GoogleAnalytics />
-        </Head>
+        <Head></Head>
         <body className="testing">
           <Main />
           <NextScript />
         </body>
+        <GoogleAnalytics />
       </Html>
     );
   }
