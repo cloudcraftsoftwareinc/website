@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 import { AppConfig } from '../utils/AppConfig';
@@ -13,6 +14,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <GoogleTagManager gtmId="G-NV5LK0T9C1" />
       </Html>
     );
   }
