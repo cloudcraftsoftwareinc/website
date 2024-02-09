@@ -55,10 +55,10 @@ const getAllLandingPages = async () => {
 const generateRssFeed = async () => {
   const feed = new Feed({
     title: 'Cloudcraft Software',
-    id: 'https://cloudcraft.software/feed.xml',
-    link: 'https://cloudcraft.software/feed.xml',
+    id: 'https://cloudcraft.software/sitemap.xml',
+    link: 'https://cloudcraft.software/sitemap.xml',
     feedLinks: {
-      atom: 'https://cloudcraft.software/feed.xml',
+      atom: 'https://cloudcraft.software/sitemap.xml',
     },
     author: {
       name: 'Aaron Fay',
