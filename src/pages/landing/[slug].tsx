@@ -1,3 +1,4 @@
+import { MDXProvider } from '@mdx-js/react';
 import { MDXRemote } from 'next-mdx-remote';
 
 import { GetStartedBlurb } from '../../components/get-started-blurb';
@@ -35,7 +36,9 @@ export default function PostPage({
             <img src={frontMatter.image} className="my-10 rounded-3xl"></img>
           )}
           <article className="prose dark:prose-dark">
-            <MDXRemote {...source} components={components} />
+            <MDXProvider>
+              <MDXRemote {...source} components={components} />
+            </MDXProvider>
           </article>
         </div>
       </div>
