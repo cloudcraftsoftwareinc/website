@@ -1,5 +1,9 @@
+import rehypePrism from '@mapbox/rehype-prism';
 import { MDXProvider } from '@mdx-js/react';
+import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
+import remarkGfm from 'remark-gfm';
 
 import { GetStartedBlurb } from '../../components/get-started-blurb';
 import * as mdxComponents from '../../components/mdx';
@@ -7,9 +11,7 @@ import { ServicesBlurb } from '../../components/services-blurb';
 import { Layout } from '../../layout/Layout';
 import { Banner } from '../../templates/Banner';
 import {
-  // getNextPostBySlug,
-  getPostBySlug,
-  // getPreviousPostBySlug,
+  getLandingPageSourceBySlug,
   postFilePaths,
 } from '../../utils/mdx-utils';
 
@@ -19,12 +21,7 @@ const components = {
   GetStartedBlurb,
 };
 
-export default function PostPage({
-  source,
-  frontMatter,
-  // prevPost,
-  // nextPost,
-}: any) {
+export default function PostPage({ source, frontMatter }: any) {
   return (
     <Layout>
       <div className="w-full text-gray-900 antialiased">
@@ -54,18 +51,21 @@ type IStaticPropsParams = {
 };
 
 export const getStaticProps = async ({ params }: IStaticPropsParams) => {
-  // const globalData = getGlobalData();
-  const { mdxSource, data } = await getPostBySlug(params.slug);
-  // const prevPost = getPreviousPostBySlug(params.slug);
-  // const nextPost = getNextPostBySlug(params.slug);
-  // hello
+  const source = await getLandingPageSourceBySlug(params.slug);
+  const { content, data } = matter(source);
+
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypePrism],
+    },
+    scope: data,
+  });
+
   return {
     props: {
-      // globalData,
       source: mdxSource,
       frontMatter: data,
-      // prevPost,
-      // nextPost,
     },
   };
 };

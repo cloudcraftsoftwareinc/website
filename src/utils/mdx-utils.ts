@@ -55,6 +55,12 @@ export const getPostBySlug = async (slug: String) => {
   return { mdxSource, data, postFilePath };
 };
 
+export const getLandingPageSourceBySlug = async (slug: String) => {
+  const postFilePath = path.join(POSTS_PATH, `${slug}.mdx`);
+  const source = fs.readFileSync(postFilePath);
+  return source;
+};
+
 export const getNextPostBySlug = (slug: String) => {
   const posts = getPosts();
   const currentFileName = `${slug}.mdx`;
