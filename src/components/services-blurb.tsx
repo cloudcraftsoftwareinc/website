@@ -3,15 +3,14 @@ import Link from 'next/link';
 import { Background } from '../background/Background';
 
 const ServicesBlurb = () => (
-  <Background color="bg-gray-100 rounded-2xl mx-8">
-    <div className="mt-8 flex flex-wrap items-center justify-between px-4">
+  <Background color="bg-gray-200 rounded-2xl">
+    <div className="mt-8 flex flex-wrap items-center justify-between">
       <div className="w-full p-4 text-center">
         <p className="py-4 font-semibold">
-          Looking for automation solutions? Check out our{' '}
-          <Link href="/services" className="text-primary-500">
-            services
+          Need help fast-tracking your digital presence?{' '}
+          <Link href="/" className="text-primary-500">
+            Check out our services 🚀
           </Link>
-          .
         </p>
       </div>
     </div>

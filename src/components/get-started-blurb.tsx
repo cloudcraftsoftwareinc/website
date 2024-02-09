@@ -3,15 +3,18 @@ import Link from 'next/link';
 import { Background } from '../background/Background';
 
 const GetStartedBlurb = () => (
-  <Background color="bg-gray-100 rounded-2xl mx-8">
-    <div className="mt-8 flex flex-wrap items-center justify-between px-4">
-      <div className="w-full p-4 text-center">
+  <Background color="bg-gray-200 rounded-2xl">
+    <div className="mt-8 flex flex-wrap items-center justify-between">
+      <div className="w-full py-4 text-center">
         <p className="py-4 font-semibold">
           Free small business consultation,{' '}
-          <Link href="/services" className="text-primary-500">
-            contact us to get started
+          <Link
+            target="_blank"
+            href="https://m.me/201238836414988"
+            className="text-primary-500"
+          >
+            contact us to get started 🚀
           </Link>
-          .
         </p>
       </div>
     </div>
