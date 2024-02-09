@@ -1,12 +1,9 @@
-import { Meta } from '../layout/Meta';
-import { Footer } from '../templates/Footer';
-import { AppConfig } from '../utils/AppConfig';
+import { Layout } from '@/layout/Layout';
 
 export default function About() {
   return (
-    <>
-      <div className="text-gray-600 antialiased">
-        <Meta title={AppConfig.title} description={AppConfig.description} />
+    <Layout>
+      <div className="text-gray-900 antialiased">
         <div className="mx-auto max-w-2xl p-4">
           <h1 className="mb-6 text-center text-3xl font-bold">
             The Future is Now: Embracing AI in Business
@@ -66,8 +63,7 @@ export default function About() {
             with AI, and embracing it is key to achieving sustained success.
           </p>
         </div>
-        <Footer />
       </div>
-    </>
+    </Layout>
   );
 }

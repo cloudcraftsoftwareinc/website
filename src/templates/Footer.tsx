@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+// import { Button } from '@/button/Button';
 import { Background } from '../background/Background';
 import { CenteredFooter } from '../footer/CenteredFooter';
 import { Section } from '../layout/Section';
@@ -7,6 +8,18 @@ import { Logo } from './Logo';
 
 const Footer = () => (
   <Background color="bg-gray-100">
+    {/* <Section>
+      <div className="flex flex-wrap items-center justify-between px-4">
+        <div className="w-full md:w-3/4 p-4 text-xl">
+          <p>Start doing less work with more help from Automation and AI. Contact us for a free, no-obligation consultation and start accelerating your business today.</p>
+        </div>
+        <div className="w-full md:w-1/4 flex justify-center md:justify-end p-4">
+          <Link target="_blank" href="https://m.me/201238836414988">
+            <Button>Contact Us</Button>
+          </Link>
+        </div>
+      </div>
+    </Section> */}
     <Section>
       <CenteredFooter
         logo={<Logo />}

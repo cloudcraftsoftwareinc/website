@@ -1,0 +1,83 @@
+Generate an article in MDX using this question: "How do I stay healthy?"
+
+The grey matter should contain title, description, author (Aaron Fay) and "image: 'todo'". focus on small business owners, so no content about industrial practices like robotics, focus more on owner/operators or small businesses that have less that 10 staff and would be in the retail or service industry.
+
+The body should only contain h2 and smaller headings. Make the first heading the exact input question, the and the first paragraph a summarized answer that will be explored further in depth in the rest of the article. Only output the MDX content, no summary. Render the `<GetStartedBlurb />` and `<ServicesBlurb />` items exaclty as they are so they will be picked up in the final MDX output.
+
+Use this template as a guide for the output, following the additional prompt information in angle bracket <>:
+
+```
+---
+grey matter
+---
+
+## <original question>
+
+<introduction paragraph with summarizing answer to original question>
+
+<second paragraph proposing further questions about original question to explore further>
+
+## <heading>
+
+<paragraph>
+
+<paragraph>
+
+### <section summary heading>
+
+ * <list of 3-5 examples>
+
+## <heading>
+
+<paragraph>
+
+<paragraph>
+
+<GetStartedBlurb />
+
+## <heading>
+
+<paragraph>
+
+<paragraph>
+
+### <section summary heading>
+
+ * <list of 3-5 examples>
+
+## <heading>
+
+<paragraph>
+
+<paragraph>
+
+### <section summary heading>
+
+ * <list of 3-5 examples>
+
+<ServicesBlurb />
+
+## <heading>
+
+<blockquote tip>
+
+<paragraph>
+
+<paragraph>
+
+## <heading>
+
+<paragraph>
+
+<paragraph>
+
+### <section summary heading>
+
+ * <list of 3-5 examples>
+
+## <Overall summary heading>
+
+<paragraph summary and conclusion>
+```
+
+Do not wrap the output in backticks or provide any other output.
