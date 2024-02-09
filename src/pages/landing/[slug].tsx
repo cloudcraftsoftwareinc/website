@@ -1,5 +1,4 @@
 import rehypePrism from '@mapbox/rehype-prism';
-import { MDXProvider } from '@mdx-js/react';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
@@ -33,9 +32,7 @@ export default function PostPage({ source, frontMatter }: any) {
             <img src={frontMatter.image} className="my-10 rounded-3xl"></img>
           )}
           <article className="prose dark:prose-dark">
-            <MDXProvider>
-              <MDXRemote {...source} components={components} />
-            </MDXProvider>
+            <MDXRemote {...source} components={components} />
           </article>
         </div>
       </div>
