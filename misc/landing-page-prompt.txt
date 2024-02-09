@@ -9,9 +9,7 @@ Use this template as a guide for the output, following the additional prompt inf
 ```
 ---
 grey matter
----
-
-## <original question>
+---## <original question>
 
 <introduction paragraph with summarizing answer to original question>
 
