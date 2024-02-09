@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "build": "next build",
+    "generate-sitemap": "node ./scripts/generate-sitemap.js",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "build-prod": "run-s clean build",
