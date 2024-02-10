@@ -1,6 +1,9 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 import { AppConfig } from '../utils/AppConfig';
+
+const gtmId = 'G-NV5LK0T9C1';
 
 // Need to create a custom _document because i18n support is not compatible with `next export`.
 class MyDocument extends Document {
@@ -13,6 +16,16 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${gtmId}`} />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${gtmId}');
+          `}
+        </Script>
       </Html>
     );
   }
