@@ -14,11 +14,9 @@ const Header = (props: IHeaderProps) => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        {/* <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li> */}
+        <li>
+          <Link href="/#anchor-services">Services</Link>
+        </li>
         <li>
           <Link href="/">Home</Link>
         </li>

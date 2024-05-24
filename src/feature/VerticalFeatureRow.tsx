@@ -30,8 +30,11 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       <div className="w-full text-center sm:w-1/2 sm:px-6">
         <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
         <div className="my-6 text-xl leading-9">{props.description}</div>
-        <Link target="_blank" href="https://m.me/201238836414988">
-          <Button>Ask us how</Button>
+        <Link
+          target="_blank"
+          href="https://calendar.cloudcraft.software/introduction-appointment"
+        >
+          <Button>Book an intro with us</Button>
         </Link>
       </div>
 

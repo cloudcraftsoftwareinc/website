@@ -1,64 +1,49 @@
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
-const techInsights = `
-Navigate the ever-evolving tech landscape with guidance from our experts.
-Disruption has never looked like it does today, with AI technology every
-business has the opportunity to grow like never before. We help transform
-complex information into actionable insights, making your business more agile,
-more efficient, and more profitable. 
+const onlinePresence = `
+Ensure that your online presence is optimized for lead generation and online reputation. Customers finding you online are comparing you to your competitors, and they want to know how to get ahold of you, and whether you are reputable. We optimize your online footprint to maximize your presence, but also maintain it without you having to think about it.
 `;
 
 const automation = `
-We help you integrate cutting-edge automation solutions across your business
-processes, reducing costs, and freeing your team to focus on growth. From
-simple tasks to complex workflows, embrace the transformative power of
-automation for a smarter, faster, and more scalable business model.
+We identify the pain points within your business processes. Maybe you're spending all your time with wasted calls, or missed appointment bookings. Repetitive manual processes are the easiest to target for process automation, and utilizing modern technology like ChatGPT can make a huge impact towards your bottom line, freeing up your time to focus on your business.
 `;
 
-const cto = `
-We offer you the strategic leadership and technical expertise of a Chief
-Technology Officer without the full-time executive commitment. We provide
-high-level oversight and direction for your tech initiatives, ensuring
-that your technology strategy aligns with business goals, drives innovation,
-and delivers sustainable growth. With our fractional model, gain the insights
-and experience of a seasoned CTO, scaled to suit your business needs and budget.
+const intake = `
+We reduce time and effort required to qualify your leads and onboard your clients through inbox consolidation, data intake automation, and lead qualification. Spend more focused time with leads that match your business and less time managing inboxes and sorting out forms and scheduling. Our service is designed to reduce your hands-on time with customers while simultaneously providing a better customer experience.
 `;
 
 const software = `
-High-leverage actions are at the core of our strategy. We focus on robust software
-development using cutting-edge tools to drive down the cost of delivering new
-features to production. Starting with a focus on strategy, and leveraging No-code,
-Low-code, Serverless and AI-assisted technologies, we can bring your idea to life faster, often
-in days or weeks rather than months.
+Self-booking appointment calendars, automated SMS reminders & rescheduling options, and chat automations can greatly improve the customer experience and reduce your hands-on time with customers giving you more freedom to focus on doing great work. 
 `;
 
 const VerticalFeatures = () => (
   <Section
-    title="Work smarter, not harder"
-    description="We're not your typical technology company, we look into the future and bring high-leverage strategies and solutions to give you more time to work on what matters."
+    title="Our Services"
+    id="services"
+    description="We help our customers get the most out of their online presence, lead generation, and technology footprint to boost revenue, reduce wasted time, and grow their business."
   >
     <VerticalFeatureRow
-      title="Technology Insights"
-      description={techInsights}
+      title="Online presence management"
+      description={onlinePresence}
       image="/assets/images/strategy-and-ai.png"
       imageAlt="First feature alt text"
     />
     <VerticalFeatureRow
-      title="Everything Automation"
+      title="Process optimization"
       description={automation}
       image="/assets/images/automate-everything.png"
       imageAlt="Second feature alt text"
       reverse
     />
     <VerticalFeatureRow
-      title="Fractional CTO"
-      description={cto}
+      title="Intake consolidation"
+      description={intake}
       image="/assets/images/achieve-your-goals.png"
       imageAlt="Third feature alt text"
     />
     <VerticalFeatureRow
-      title="Non-traditional Software Engineering"
+      title="Self-serve systems"
       description={software}
       image="/assets/images/software-development.png"
       imageAlt="Third feature alt text"

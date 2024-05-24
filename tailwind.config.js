@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/assets/images/banner-bg.png')",
+      },
       colors: {
         primary: {
           // azure radiance
