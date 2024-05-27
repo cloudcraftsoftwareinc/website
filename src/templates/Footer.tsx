@@ -7,22 +7,13 @@ import { Section } from '../layout/Section';
 import { Logo } from './Logo';
 
 const Footer = () => (
-  <Background color="bg-gray-100">
-    {/* <Section>
-      <div className="flex flex-wrap items-center justify-between px-4">
-        <div className="w-full md:w-3/4 p-4 text-xl">
-          <p>Start doing less work with more help from Automation and AI. Contact us for a free, no-obligation consultation and start accelerating your business today.</p>
-        </div>
-        <div className="w-full md:w-1/4 flex justify-center md:justify-end p-4">
-          <Link target="_blank" href="https://m.me/201238836414988">
-            <Button>Contact Us</Button>
-          </Link>
-        </div>
-      </div>
-    </Section> */}
+  <Background
+    color="bg-gray-900 border-t-8 border-t-primary-800"
+    textColor="text-slate-100"
+  >
     <Section>
       <CenteredFooter
-        logo={<Logo />}
+        logo={<Logo light={true} />}
         iconList={
           <>
             <Link href="/">
@@ -37,17 +28,17 @@ const Footer = () => (
               </svg>
             </Link>
 
-            <Link href="/">
+            {/* <Link href="/">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
               </svg>
-            </Link>
+            </Link> */}
 
-            <Link href="/">
+            {/* <Link href="/">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
               </svg>
-            </Link>
+            </Link> */}
 
             <Link href="/">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +46,7 @@ const Footer = () => (
               </svg>
             </Link>
 
-            <Link href="/">
+            {/* <Link href="/">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.585 5.267c1.834 0 3.558.811 4.824 2.08v.004c0-.609.41-1.068.979-1.068h.145c.891 0 1.073.842 1.073 1.109l.005 9.475c-.063.621.64.941 1.029.543 1.521-1.564 3.342-8.038-.946-11.79-3.996-3.497-9.357-2.921-12.209-.955-3.031 2.091-4.971 6.718-3.086 11.064 2.054 4.74 7.931 6.152 11.424 4.744 1.769-.715 2.586 1.676.749 2.457-2.776 1.184-10.502 1.064-14.11-5.188C-.977 13.521-.847 6.093 5.62 2.245 10.567-.698 17.09.117 21.022 4.224c4.111 4.294 3.872 12.334-.139 15.461-1.816 1.42-4.516.037-4.498-2.031l-.019-.678c-1.265 1.256-2.948 1.988-4.782 1.988-3.625 0-6.813-3.189-6.813-6.812 0-3.659 3.189-6.885 6.814-6.885zm4.561 6.623c-.137-2.653-2.106-4.249-4.484-4.249h-.09c-2.745 0-4.268 2.159-4.268 4.61 0 2.747 1.842 4.481 4.256 4.481 2.693 0 4.464-1.973 4.592-4.306l-.006-.536z" />
               </svg>
@@ -65,7 +56,7 @@ const Footer = () => (
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415a3.3 3.3 0 013.293 3.295A3.303 3.303 0 013.283 24C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z" />
               </svg>
-            </Link>
+            </Link> */}
           </>
         }
       >
@@ -77,11 +68,6 @@ const Footer = () => (
         </li>
         <li>
           <Link href="/">Docs</Link>
-        </li>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
         </li>
       </CenteredFooter>
     </Section>

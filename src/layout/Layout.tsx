@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 import { Header } from '@/templates/Header';
 
+import { Banner } from '../templates/Banner';
 import { Footer } from '../templates/Footer';
 import { AppConfig } from '../utils/AppConfig';
 import { Meta } from './Meta';
@@ -15,6 +16,7 @@ const Layout = (props: ILayoutProps) => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Header />
     {props.children}
+    <Banner />
     <Footer />
   </div>
 );

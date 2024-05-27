@@ -7,30 +7,30 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 
 const typedWords = [
-  'Small business',
-  'Daycare',
-  'Accounting firm',
-  'Carwash',
+  'Small Business Automation',
+  'Automated Campaigns',
+  'Daycares',
+  'Accountants',
+  'Carwashes',
   'Plumbers',
-  'Law firm',
+  'Law firms',
   'Electricians',
-  'Credit Union',
+  'Credit Unions',
   'Photographers',
-  'Hair salon',
+  'Hair salons',
   'Contractors',
-  'Small Business',
+  'Effortless Business Management',
 ];
 
 const Hero = () => (
   <Background
-    color="bg-gray-100 bg-scroll bg-center"
+    color="bg-gray-100 bg-scroll bg-center border-t-8 border-t-primary-600"
     image="/assets/images/banner-bg.png"
   >
-    <Section yPadding="pt-20 pb-20">
+    <Section yPadding="pt-32 pb-32">
       <HeroOneButton
-        title={<>{'We are your'}</>}
+        title={<>{'Your technology partners for'}</>}
         typeLine={<Typewriter words={typedWords} />}
-        description="Leveraging the power of Low-code, AI, Automation, and the Cloud to transform your business."
         button={
           <Link
             target="_blank"

@@ -17,10 +17,25 @@ const Button = (props: IButtonProps) => {
     <div className={btnClass}>
       {props.children}
 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 26 26"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="ml-1 mt-1.5 size-5"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+        />
+      </svg>
+
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply inline-flex rounded-md text-center;
           }
 
           .btn-base {

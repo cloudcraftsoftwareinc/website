@@ -1,5 +1,4 @@
 import { Layout } from '../layout/Layout';
-import { Banner } from './Banner';
 import { Hero } from './Hero';
 import { VerticalFeatures } from './VerticalFeatures';
 
@@ -8,7 +7,6 @@ const Base = () => (
     <Layout>
       <Hero />
       <VerticalFeatures />
-      <Banner />
     </Layout>
   </div>
 );

@@ -12,9 +12,9 @@ type IHeaderProps = {
 
 const Header = (props: IHeaderProps) => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
+    <Section yPadding="pt-6 pb-2">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
+        <li className="cursor-pointer">
           <Link href="/#anchor-services">Services</Link>
         </li>
         <li>

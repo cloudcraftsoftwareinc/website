@@ -2,16 +2,20 @@ import { AppConfig } from '../utils/AppConfig';
 
 type ILogoProps = {
   xl?: boolean;
+  light?: boolean;
 };
 
 const Logo = (props: ILogoProps) => {
   const size = props.xl ? '44' : '32';
   const fontStyle = props.xl
-    ? 'font-semibold text-3xl'
+    ? 'font-semibold text-2xl'
     : 'font-semibold text-xl';
+  const light = props.light ? '100' : '900';
 
   return (
-    <span className={`inline-flex items-center text-primary-900 ${fontStyle}`}>
+    <span
+      className={`text-primary- inline-flex items-center${light} ${fontStyle}`}
+    >
       <img
         width={size}
         height={size}

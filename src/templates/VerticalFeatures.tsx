@@ -1,53 +1,65 @@
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
 import { Section } from '../layout/Section';
 
-const onlinePresence = `
-Ensure that your online presence is optimized for lead generation and online reputation. Customers finding you online are comparing you to your competitors, and they want to know how to get ahold of you, and whether you are reputable. We optimize your online footprint to maximize your presence, but also maintain it without you having to think about it.
+const businessProcessAutomation = `
+Automate repetitive tasks and streamline your business processes with our expert automation services. Save time and reduce errors with tailored workflows.
 `;
 
-const automation = `
-We identify the pain points within your business processes. Maybe you're spending all your time with wasted calls, or missed appointment bookings. Repetitive manual processes are the easiest to target for process automation, and utilizing modern technology like ChatGPT can make a huge impact towards your bottom line, freeing up your time to focus on your business.
+const reputationManagement = `
+Build trust and differentiate your business. We will help you optimize your online presence and maintain to make you stand out from the crowd.
 `;
 
-const intake = `
-We reduce time and effort required to qualify your leads and onboard your clients through inbox consolidation, data intake automation, and lead qualification. Spend more focused time with leads that match your business and less time managing inboxes and sorting out forms and scheduling. Our service is designed to reduce your hands-on time with customers while simultaneously providing a better customer experience.
+const systemConsolidation = `
+Manage your business from one place. Running a separate CRM, messaging platforms, campaign tooling, document & contract management, invoicing and payment systems is wasting your time.
 `;
 
 const software = `
-Self-booking appointment calendars, automated SMS reminders & rescheduling options, and chat automations can greatly improve the customer experience and reduce your hands-on time with customers giving you more freedom to focus on doing great work. 
+Give your customers the gift of instant gratification. Self-serve appointment booking, notifications, chat automations and AI-powered support put the power in your customers hands. 
 `;
 
 const VerticalFeatures = () => (
   <Section
-    title="Our Services"
+    title="Website and Automated Solutions for Small Business"
     id="services"
-    description="We help our customers get the most out of their online presence, lead generation, and technology footprint to boost revenue, reduce wasted time, and grow their business."
+    description="All-in-one platform for customer management, online reputation, booking, documents, invoicing and more. Save time and money with tailored solutions that are right for your business."
   >
     <VerticalFeatureRow
-      title="Online presence management"
-      description={onlinePresence}
-      image="/assets/images/strategy-and-ai.png"
-      imageAlt="First feature alt text"
-    />
-    <VerticalFeatureRow
-      title="Process optimization"
-      description={automation}
+      title="Boost Your Productivity"
+      description={businessProcessAutomation}
       image="/assets/images/automate-everything.png"
+      imageAlt="First feature alt text"
+      target="/boost-your-business-productivity"
+      targetText="Find out more"
+      badge={true}
+    />
+    <VerticalFeatureRow
+      title="Enhance Your Online Presence"
+      description={reputationManagement}
       imageAlt="Second feature alt text"
-      reverse
-    />
-    <VerticalFeatureRow
-      title="Intake consolidation"
-      description={intake}
       image="/assets/images/achieve-your-goals.png"
-      imageAlt="Third feature alt text"
+      target="/enhance-your-online-presence"
+      targetText="Find out more"
+      reverse
+      badge={true}
     />
     <VerticalFeatureRow
-      title="Self-serve systems"
-      description={software}
+      title="Simplify Your Operations"
+      description={systemConsolidation}
       image="/assets/images/software-development.png"
       imageAlt="Third feature alt text"
+      target="/simplify-your-operations"
+      targetText="Find out more"
+      badge={true}
+    />
+    <VerticalFeatureRow
+      title="Improve Your Customer Experience"
+      description={software}
+      image="/assets/images/strategy-and-ai.png"
+      imageAlt="Third feature alt text"
+      target="/improve-customer-experience"
+      targetText="Find out more"
       reverse
+      badge={true}
     />
   </Section>
 );

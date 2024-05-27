@@ -16,7 +16,7 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
     <div>Call us at (236) 905 0235 or email support@cloudcraft.software</div>
 
     <nav>
-      <ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-800">
+      <ul className="navbar mt-5 flex flex-row justify-center text-xl font-medium text-gray-400">
         {props.children}
       </ul>
     </nav>
