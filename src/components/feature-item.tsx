@@ -7,7 +7,7 @@ type IFeatureItemProps = {
 const FeatureItem = (props: IFeatureItemProps) => {
   return (
     <div className="flex pt-2">
-      <CheckIcon size="6" />
+      <CheckIcon />
       <span className="ml-2 text-xl text-slate-700">{props.text}</span>
     </div>
   );

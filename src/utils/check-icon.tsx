@@ -2,17 +2,15 @@ import className from 'classnames';
 
 type ICheckIconProps = {
   color?: string;
-  size?: string;
   centered?: boolean;
 };
 
 const CheckIcon = (props: ICheckIconProps) => {
   const centered = props.centered ? 'm-auto' : '';
-  const size = props.size || '6';
   const color = props.color || '#3CB371';
 
   const iconClass = className({
-    [`size-${size}`]: true,
+    [`size-6`]: true,
     centered: !!centered,
     'mb-2': true,
     'my-1': true,
