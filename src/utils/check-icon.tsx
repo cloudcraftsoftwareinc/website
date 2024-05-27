@@ -1,3 +1,5 @@
+import className from 'classnames';
+
 type ICheckIconProps = {
   color?: string;
   size?: string;
@@ -9,12 +11,20 @@ const CheckIcon = (props: ICheckIconProps) => {
   const size = props.size || '6';
   const color = props.color || '#3CB371';
 
+  const iconClass = className({
+    [`size-${size}`]: true,
+    centered: !!centered,
+    'mb-2': true,
+    'my-1': true,
+    'min-w-2': true,
+  });
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill={color}
-      className={`size-${size} mb-2 ${centered} my-1 min-w-6`}
+      className={iconClass}
     >
       <path
         fillRule="evenodd"
