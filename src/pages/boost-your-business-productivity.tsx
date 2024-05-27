@@ -42,6 +42,7 @@ export default function Reputation() {
         title="Do more"
         subTitle="with less."
         byline="Free up time to focus on what matters for your business."
+        image="/assets/images/boost-your-productivity-banner.png"
       />
 
       <div className="text-gray-900 antialiased">
@@ -54,14 +55,14 @@ export default function Reputation() {
             title="Simplify customer management"
             items={featureOneItems}
             image="/assets/images/feature-simplify-customer-management.png"
-            imageAlt="First feature alt text"
+            imageAlt="Simplify customer management with an integrated CRM"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Marketing on Autopilot"
             items={featureTwoItems}
-            imageAlt="Second feature alt text"
+            imageAlt="Make marketing a breeze with automation"
             image="/assets/images/feature-marketing-on-autopilot.png"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
@@ -70,16 +71,16 @@ export default function Reputation() {
           <VerticalFeatureRowLanding
             title="Reduce Wasted Time & Effort"
             items={featureThreeItems}
-            image="/assets/images/software-development.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/simplify-your-operations.png"
+            imageAlt="Simplify your operations"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Improve Insights & Reputation"
             items={featureFourItems}
-            image="/assets/images/strategy-and-ai.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/improve-insights-reputation.png"
+            imageAlt="Improve reputation to build trust with your customers"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
             reverse

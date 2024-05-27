@@ -42,6 +42,7 @@ export default function Reputation() {
         title="Reputation"
         subTitle="matters."
         byline="Build an online presence that sets you apart from the crowd."
+        image="/assets/images/enhance-online-presence-banner.png"
       />
 
       <div className="text-gray-900 antialiased">
@@ -53,15 +54,15 @@ export default function Reputation() {
           <VerticalFeatureRowLanding
             title="Website & Landing Page Management"
             items={featureOneItems}
-            image="/assets/images/feature-simplify-customer-management.png"
-            imageAlt="First feature alt text"
+            image="/assets/images/website-landing-page.png"
+            imageAlt="Simple to use websites and landing pages"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Customer Engagement & Relationship Management"
             items={featureTwoItems}
-            imageAlt="Second feature alt text"
+            imageAlt="Dead-simple CRM system"
             image="/assets/images/feature-marketing-on-autopilot.png"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
@@ -70,16 +71,16 @@ export default function Reputation() {
           <VerticalFeatureRowLanding
             title="Marketing & Sales Automation"
             items={featureThreeItems}
-            image="/assets/images/software-development.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/marketing-sales-automation.png"
+            imageAlt="Marketing & sales automations"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Operational Efficiency & Analytics"
             items={featureFourItems}
-            image="/assets/images/strategy-and-ai.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/operational-efficiency-analytics.png"
+            imageAlt="Build efficiency right into your operations"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
             reverse

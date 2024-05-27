@@ -41,6 +41,7 @@ export default function Reputation() {
         title="Smarter,"
         subTitle="Not harder."
         byline="Build an online presence that sets you apart from the crowd."
+        image="/assets/images/simplify-your-operations-banner.png"
       />
 
       <div className="text-gray-900 antialiased">
@@ -52,15 +53,15 @@ export default function Reputation() {
           <VerticalFeatureRowLanding
             title="Simplify Customer Relationship & Engagement"
             items={featureOneItems}
-            image="/assets/images/feature-simplify-customer-management.png"
-            imageAlt="First feature alt text"
+            image="/assets/images/simplify-customer-management.png"
+            imageAlt="Keep all your customers in one place"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Automate Marketing & Sales Efforts"
             items={featureTwoItems}
-            imageAlt="Second feature alt text"
+            imageAlt="Put your marketing on autopilot so you can focus on your business"
             image="/assets/images/feature-marketing-on-autopilot.png"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
@@ -69,16 +70,16 @@ export default function Reputation() {
           <VerticalFeatureRowLanding
             title="Optimize Scheduling & Workflows"
             items={featureThreeItems}
-            image="/assets/images/software-development.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/automate-workflows.png"
+            imageAlt="Self-booking options that put your customer first"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
           />
           <VerticalFeatureRowLanding
             title="Consolidate Insights & Communication"
             items={featureFourItems}
-            image="/assets/images/strategy-and-ai.png"
-            imageAlt="Third feature alt text"
+            image="/assets/images/improve-insights-reputation.png"
+            imageAlt="Reporting and insights in to your business operations"
             target="https://calendar.cloudcraft.software/introduction-appointment"
             targetText="Request a demo"
             reverse

@@ -18,7 +18,7 @@ type IVerticalFeatureRowLandingProps = {
 
 const VerticalFeatureRowLanding = (props: IVerticalFeatureRowLandingProps) => {
   const verticalFeatureClass = className(
-    'mt-2',
+    'mt-16',
     'flex',
     'flex-wrap',
     'items-center',
@@ -55,7 +55,7 @@ const VerticalFeatureRowLanding = (props: IVerticalFeatureRowLandingProps) => {
         </Link>
       </div>
 
-      <div className="w-full p-6 sm:w-1/2">
+      <div className="w-full p-6 py-4 sm:w-1/2">
         <img src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
       </div>
     </div>

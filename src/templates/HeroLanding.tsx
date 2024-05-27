@@ -5,6 +5,7 @@ type IHeroLandingProps = {
   title: string;
   subTitle: string;
   byline: string;
+  image: string;
 };
 
 const HeroLanding = (props: IHeroLandingProps) => (
@@ -21,7 +22,7 @@ const HeroLanding = (props: IHeroLandingProps) => (
           <p className="mx-20 mt-4 text-2xl">{props.byline}</p>
         </div>
         <div>
-          <img src="/assets/images/boost-your-productivity.png" />
+          <img src={props.image} />
         </div>
       </div>
     </Section>

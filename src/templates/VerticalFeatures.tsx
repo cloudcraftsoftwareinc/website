@@ -26,8 +26,8 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Boost Your Productivity"
       description={businessProcessAutomation}
-      image="/assets/images/automate-everything.png"
-      imageAlt="First feature alt text"
+      image="/assets/images/boost-your-productivity.png"
+      imageAlt="Save time and money"
       target="/boost-your-business-productivity"
       targetText="Find out more"
       badge={true}
@@ -35,8 +35,8 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Enhance Your Online Presence"
       description={reputationManagement}
-      imageAlt="Second feature alt text"
-      image="/assets/images/achieve-your-goals.png"
+      imageAlt="Enhance your online presence"
+      image="/assets/images/enhance-online-presence.png"
       target="/enhance-your-online-presence"
       targetText="Find out more"
       reverse
@@ -45,8 +45,8 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Simplify Your Operations"
       description={systemConsolidation}
-      image="/assets/images/software-development.png"
-      imageAlt="Third feature alt text"
+      image="/assets/images/simplify-your-operations.png"
+      imageAlt="Simplify your operations"
       target="/simplify-your-operations"
       targetText="Find out more"
       badge={true}
@@ -54,8 +54,8 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Improve Your Customer Experience"
       description={software}
-      image="/assets/images/strategy-and-ai.png"
-      imageAlt="Third feature alt text"
+      image="/assets/images/improve-insights-reputation.png"
+      imageAlt="Improve insights and reputation"
       target="/improve-customer-experience"
       targetText="Find out more"
       reverse
