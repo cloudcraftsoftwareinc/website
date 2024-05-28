@@ -13,7 +13,11 @@ const Footer = () => (
   >
     <Section>
       <CenteredFooter
-        logo={<Logo light={true} />}
+        logo={
+          <Link href="/">
+            <Logo light={true} />
+          </Link>
+        }
         iconList={
           <>
             <Link href="/">
@@ -60,14 +64,24 @@ const Footer = () => (
           </>
         }
       >
-        <li>
+        {/* <li>
           <Link href="/">Home</Link>
+        </li> */}
+        <li>
+          <Link href="/boost-your-business-productivity/">
+            Productivity Suite
+          </Link>
         </li>
         <li>
-          <Link href="/">About</Link>
+          <Link href="/enhance-your-online-presence/">
+            Reputation Management
+          </Link>
         </li>
         <li>
-          <Link href="/">Docs</Link>
+          <Link href="/simplify-your-operations/">Process Optimization</Link>
+        </li>
+        <li>
+          <Link href="/improve-customer-experience/">Customer Insights</Link>
         </li>
       </CenteredFooter>
     </Section>

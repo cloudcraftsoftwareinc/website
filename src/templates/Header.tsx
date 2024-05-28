@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { Background } from '../background/Background';
+import { Button } from '../button/Button';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
@@ -15,10 +16,16 @@ const Header = (props: IHeaderProps) => (
     <Section yPadding="pt-6 pb-2">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li className="cursor-pointer">
-          <Link href="/#anchor-services">Services</Link>
+          {/* <Link href="/#anchor-services">Services</Link> */}
+          (236) 905-0235
         </li>
         <li>
-          <Link href="/">Home</Link>
+          <Link
+            target="_blank"
+            href="https://calendar.cloudcraft.software/introduction-appointment"
+          >
+            <Button>Book a call</Button>
+          </Link>
         </li>
       </NavbarTwoColumns>
     </Section>
